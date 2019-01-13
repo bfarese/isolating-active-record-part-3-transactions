@@ -1,0 +1,10 @@
+<div class="grid-x">
+  <div class="cell small-offset-2 small-8">
+    <h1>Users</h1>
+
+    <% @users.each do |user| %>
+      <div>Name: <%= user.name %></div>
+      <div>Email: <%= user.email %></div><br>
+    <% end %>
+  </div>
+</div>

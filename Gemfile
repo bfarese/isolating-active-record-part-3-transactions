@@ -10,6 +10,8 @@ gem 'sprockets-es6'
 gem 'foundation-rails'
 gem 'bootsnap', require: false
 gem 'webpacker'
+gem 'pluck_to_hash'
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'

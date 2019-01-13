@@ -111,6 +111,9 @@ GEM
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
     pg (0.21.0)
+    pluck_to_hash (1.0.2)
+      activerecord (>= 4.0.2)
+      activesupport (>= 4.0.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -242,6 +245,7 @@ DEPENDENCIES
   launchy
   listen (~> 3.0.5)
   pg (~> 0.18)
+  pluck_to_hash
   pry-rails
   puma (~> 3.7)
   rails (~> 5.2.2)

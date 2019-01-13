@@ -1,0 +1,16 @@
+module Legitimation
+  class PresenceLegitimator
+    attr_reader :attributes
+
+    def initialize(attributes)
+      @attributes = attributes
+    end
+
+    def call(object)
+      attributes[0..-2].each do |attribute|
+        value = object.send(attribute)
+        object.errors.add(attribute.to_s, "can't be blank") if value.nil? || value == ""
+      end
+    end
+  end
+end
